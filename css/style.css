@@ -96,6 +96,12 @@
   border-radius: 8px;
 }
 
+/*FIXME removed focus border outline*/
+.header-search input:focus,
+.header-search button:focus {
+  outline: none;
+}
+
 .header-search button {
   position: absolute;
   top: 50%;
@@ -136,6 +142,11 @@
     height: 58px;
   }
 
+  /* carousel principal */
+  #carousel-principal {
+    height: calc(100% - 58px);
+  }
+
   /* Header logo */
   .header-logo {
     max-width: 180px;
@@ -145,6 +156,7 @@
 
   /* Menu */
   .header-collapse {
+    overflow-y: auto;
     position: fixed;
     background: rgba(45, 63, 81, 0.95);
     width: 100%;
@@ -189,6 +201,17 @@
 }
 
 /* MIN-WIDTH */
+@media (min-width: 768px) {
+  #carousel-principal .owl-caption {
+    padding: 30px;
+    font-size: 2.6rem;
+  }
+
+  #carousel-principal .owl-caption strong {
+    font-size: 4rem;
+  }
+}
+
 @media (min-width: 960px) {
   /* header */
   .header-nav {
