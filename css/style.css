@@ -214,6 +214,141 @@
   display: block;
 }
 
+/* ------ EQUIPE ------ */
+.equipe {
+  background: #f5f5f5;
+  padding: 50px 0;
+}
+
+.equipe-list {
+  text-align: center;
+  font-size: 0;
+}
+
+.equipe-list li {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  background: #fff;
+  width: 100%;
+  max-width: 322px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-top: 0;
+}
+
+/* equipe-foto*/
+
+.equipe-foto {
+  height: 240px;
+  overflow: hidden;
+  position: relative;
+}
+
+.equipe-foto img {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.equipe-foto-hover {
+  z-index: 1;
+  position: absolute;
+  background: rgba(45, 63, 81, 0.85);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  opacity: 0;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0.4) rotate(400deg);
+}
+
+.equipe-foto-hover div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.equipe-foto-hover span {
+  color: #fff;
+  font-size: 1.8rem;
+  position: relative;
+}
+
+.equipe-foto-hover span::before,
+.equipe-foto-hover span::after {
+  content: '';
+  background: #fff;
+  position: absolute;
+  width: 40px;
+  height: 1px;
+  top: 50%;
+}
+
+.equipe-foto-hover span::before {
+  left: -65%; /* FIXME -50% */
+}
+
+.equipe-foto-hover span::after {
+  right: -65%; /* FIXME -50% */
+}
+
+.equipe-foto-hover a {
+  color: #fff;
+  font-size: 1.4rem;
+  background: #f47933;
+  padding: 3px 10px;
+  position: relative;
+  top: 5px;
+}
+
+.equipe-foto-hover a:hover {
+  background: #ca5818;
+}
+
+/* equipe-title */
+.equipe-title {
+  padding: 10px 0;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.equipe-title::before {
+  position: absolute;
+  content: '';
+  background: #f47933;
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.equipe-title strong {
+  font-size: 1.8rem;
+  font-weight: 400;
+  position: relative;
+}
+
+/* equipe hover */
+.equipe-list li:hover .equipe-foto-hover {
+  opacity: 1;
+  border-radius: 0;
+  transform: scale(1);
+}
+
+.equipe-list li:hover .equipe-title::before {
+  top: 0;
+}
+
+.equipe-list li:hover .equipe-title {
+  color: #fff;
+}
+
 /* ---------------------------
  -------- BREAKPOINTS --------
  ----------------------------- 
@@ -298,6 +433,17 @@
   }
 }
 
+@media (min-width: 667px) {
+  /* equipe */
+  .equipe-list li {
+    width: 50%;
+  }
+
+  .equipe-list li:nth-of-type(2n) {
+    border-left: 0;
+  }
+}
+
 @media (min-width: 768px) {
   #carousel-principal .owl-caption {
     padding: 30px;
@@ -350,6 +496,20 @@
 
   .agencia-item:nth-of-type(3n) {
     margin-right: 0;
+  }
+
+  /* equipe */
+  /*.equipe-list li:nth-of-type(2n),*/
+  .equipe-list li {
+    width: 25%;
+  }
+
+  /*.equipe-list li:not(:first-child):nth-of-type(1n) {
+    border-left: 0;
+  }*/
+
+  .equipe-list li:not(:first-child) {
+    border-left: 0;
   }
 }
 
