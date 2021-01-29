@@ -185,6 +185,35 @@
   text-transform: uppercase;
 }
 
+/* ------ CURIOSIDADES ------ */
+.curiosidades {
+  padding: 50px 0;
+  text-align: center;
+  color: #fff;
+  background-image: url(../images/agencia-curiosidades-bg-min.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.curiosidades p {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.curiosidades ul {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+.curiosidades ul li span {
+  color: #01c0b5;
+  font-size: 6rem;
+  display: block;
+}
+
 /* ---------------------------
  -------- BREAKPOINTS --------
  ----------------------------- 
@@ -261,6 +290,14 @@
 }
 
 /* MIN-WIDTH */
+@media (min-width: 480px) {
+  /* CURIOSIDADES*/
+  .curiosidades ul li {
+    float: left;
+    width: 50%;
+  }
+}
+
 @media (min-width: 768px) {
   #carousel-principal .owl-caption {
     padding: 30px;
@@ -280,6 +317,11 @@
 
   .agencia-item:nth-of-type(2n + 0) {
     margin-right: 0;
+  }
+
+  /* CURIOSIDADES*/
+  .curiosidades ul li {
+    width: 25%;
   }
 }
 
