@@ -349,6 +349,118 @@
   color: #fff;
 }
 
+/******** SERVIÇOS ********/
+.servicos {
+  padding: 50px 0;
+  background-image: url(../images/servicos-bg-min.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.servicos-item {
+  /*overflow: hidden; border-radius superior */
+  background: #fff;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+}
+
+.servicos-item:not(:first-child) {
+  margin-top: 30px;
+}
+
+.servicos-item header {
+  padding: 15px;
+}
+
+.servicos-item header i {
+  font-size: 4.8rem;
+  background: #fff;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 50%;
+}
+
+.servicos-item header h2 {
+  font-size: 2.4rem;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.servicos-item p {
+  font-size: 1.4rem;
+  margin-top: 10px;
+}
+
+.servicos-item p strong {
+  font-size: 2.4rem;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.servicos-item ul li {
+  font-size: 1.8rem;
+  border-bottom: 2px dotted #ccc;
+  padding: 5px 0;
+}
+
+.servicos-item a {
+  display: inline-block;
+  font-size: 1.4rem;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+/* design */
+.servicos-item.design header,
+.servicos-item.design a {
+  background: #e04646;
+}
+
+.servicos-item.design i {
+  color: #e04646;
+}
+
+/* estratégia */
+.servicos-item.estrategia header,
+.servicos-item.estrategia a {
+  background: #0091cd;
+}
+
+.servicos-item.estrategia i {
+  color: #0091cd;
+}
+
+/* digital */
+.servicos-item.digital header,
+.servicos-item.digital a {
+  background: #00ad45;
+}
+
+.servicos-item.digital i {
+  color: #00ad45;
+}
+
+/* marketing */
+.servicos-item.marketing header,
+.servicos-item.marketing a {
+  background: #eebb00;
+}
+
+.servicos-item.marketing i {
+  color: #eebb00;
+}
+
+.servicos-item a:hover {
+  background: #f47933;
+}
+
 /* ---------------------------
  -------- BREAKPOINTS --------
  ----------------------------- 
@@ -441,6 +553,22 @@
 
   .equipe-list li:nth-of-type(2n) {
     border-left: 0;
+  }
+
+  /* serviços */
+  .servicos-item,
+  .servicos-item:not(:first-child) {
+    width: calc((100% - 4%) / 2);
+    float: left;
+    margin: 0 4% 0 0;
+  }
+
+  .servicos-item:nth-of-type(2n) {
+    margin-right: 0;
+  }
+
+  .servicos-item:nth-of-type(1n + 3) {
+    margin-top: 4%;
   }
 }
 
@@ -539,5 +667,21 @@
 
   .header-search {
     width: 260px;
+  }
+
+  /* serviços */
+  .servicos-item,
+  .servicos-item:nth-of-type(2n),
+  .servicos-item:nth-of-type(1n + 3) {
+    width: calc((100% - 9%) / 4);
+    margin: 0 3% 0 0;
+  }
+
+  /*.servicos-item:nth-of-type(4n) {
+    margin-right: 0;
+  }*/
+
+  .servicos-item:last-child {
+    margin-right: 0;
   }
 }
