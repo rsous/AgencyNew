@@ -84,3 +84,23 @@
 #carousel-principal .owl-caption strong {
   font-size: 2.4rem;
 }
+
+/* carousel testemunhas */
+#carousel-testemunhas .owl-prev,
+#carousel-testemunhas .owl-next {
+  padding: 5px 11px;
+  border-radius: 50%;
+}
+
+#carousel-testemunhas .owl-prev {
+  left: -50px;
+}
+
+#carousel-testemunhas .owl-next {
+  right: -50px;
+}
+
+#carousel-testemunhas .owl-dots {
+  position: relative;
+  top: 20px;
+}

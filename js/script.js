@@ -26,3 +26,30 @@ $(document).ready(function () {
     responsiveRefreshRate: 10,
   });
 });
+
+// Carousel Testemunhas
+$('#carousel-testemunhas').owlCarousel({
+  items: 1,
+  loop: true,
+  margin: 40,
+  nav: false,
+  navSpeed: 1000,
+  navText: [
+    '<i class="fas fa-chevron-left"></i>',
+    '<i class="fas fa-chevron-right"></i>',
+  ],
+  dots: true,
+  dotsSpeed: 1000,
+  //autoplay: true,
+  autoplaySpeed: 1000,
+  responsiveRefreshRate: 10,
+  responsive: {
+    980: {
+      items: 2,
+    },
+    1280: {
+      items: 2,
+      nav: true,
+    },
+  },
+});

@@ -461,6 +461,53 @@
   background: #f47933;
 }
 
+/******** TESTEMUNHAS ********/
+.testemunhas {
+  background: #f5f5f5;
+  padding: 50px 0;
+}
+
+.testemunhas-photo {
+  overflow: hidden;
+  width: 60px;
+  height: 60px;
+  float: left;
+  border-radius: 50%;
+}
+
+.testemunhas-info {
+  float: right;
+  width: calc(100% - 70px);
+}
+
+.testemunhas-info header {
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.testemunhas-info header h2 {
+  line-height: 1;
+  font-size: 1.9rem;
+  max-width: 92%;
+  float: left;
+}
+
+.testemunhas-info header h2 span {
+  font-size: 1.6rem;
+  color: #999;
+  font-weight: 400;
+  display: block;
+}
+
+.testemunhas-info header i {
+  font-size: 1.6rem;
+  color: #999;
+  float: right;
+  position: relative;
+  top: 3px;
+}
+
 /* ---------------------------
  -------- BREAKPOINTS --------
  ----------------------------- 
@@ -542,6 +589,16 @@
   .curiosidades ul li {
     float: left;
     width: 50%;
+  }
+
+  /* TESTEMUNHAS */
+  .testemunhas-photo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .testemunhas-info {
+    width: calc(100% - 120px);
   }
 }
 
