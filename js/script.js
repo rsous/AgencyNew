@@ -53,3 +53,17 @@ $('#carousel-testemunhas').owlCarousel({
     },
   },
 });
+
+// Portfolio
+$('.portfolio-nav li a').click(function (e) {
+  e.preventDefault();
+  $('.portfolio-nav li a').removeClass('active');
+  $(this).addClass('active');
+
+  $('.portfolio').removeClass('visible');
+  if (this.id == 'all') {
+    $('.portfolio').addClass('visible');
+  } else {
+    $('.portfolio.' + this.id).addClass('visible');
+  }
+});
