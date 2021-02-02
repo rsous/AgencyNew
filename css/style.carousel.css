@@ -64,6 +64,8 @@
   background: #f47933;
 }
 
+/* carousel principal */
+
 #carousel-principal {
   height: calc(100% - 80px);
 }

@@ -718,6 +718,121 @@
   text-decoration: underline;
 }
 
+/******** CONTATO ********/
+.contato-infos .content,
+.contato-form .content {
+  max-width: 800px;
+}
+
+.contato-infos {
+  background: url(../images/contato-bg-min.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding: 10% 0;
+  color: #fff;
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.contato-infos p {
+  font-size: 2.2rem;
+}
+
+.contato-infos span {
+  background: rgba(255, 255, 255, 0.7);
+  font-family: 'Oswald', sans-serif;
+  font-size: 4rem;
+  color: #2c3e50;
+  display: block;
+  margin: 5px auto 0 auto;
+}
+
+/* contato form */
+
+.contato-form p {
+  text-align: center;
+  margin: 50px 0 20px 0;
+  font-size: 8rem;
+}
+
+.contato-form label {
+  float: left;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.contato-form label input,
+.contato-form label textarea {
+  float: left;
+  width: 100%;
+  height: 50px;
+  font-size: 1.6rem;
+  color: #2c3e50;
+  padding: 5px;
+  margin-top: 5px;
+  border: 2px solid #eee;
+}
+
+.contato-form label input[type='checkbox'] {
+  width: auto;
+  height: auto;
+  margin-right: 5px;
+}
+
+.contato-form label textarea {
+  height: 143px;
+}
+
+.contato-form label:nth-child(3) span {
+  width: 90%;
+  display: inline-block;
+}
+
+.contato-form button {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  color: #fff;
+  background: #f47933;
+  font-size: 4.1rem;
+  line-height: 1;
+}
+
+.contato-form button i {
+  line-height: 1;
+  margin-top: 2px;
+}
+
+/******** FOOTER ********/
+.footer {
+  background: #2c3e50;
+  padding: 20px 0;
+  margin-top: 20px;
+  color: #fff;
+}
+
+/*.footer .content {
+  max-width: 800px;
+}*/
+
+.footer-col {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-redes a {
+  color: #fff;
+  font-size: 3.2rem;
+  margin: 0 10px;
+  line-height: 1;
+}
+
+.footer-col p {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
 /* ---------------------------
  -------- BREAKPOINTS --------
  ----------------------------- 
@@ -821,6 +936,11 @@
   .clientes ul li:nth-of-type(2n) {
     margin-right: 0;
   }
+
+  /* contato */
+  .contato-infos span {
+    width: 80%;
+  }
 }
 
 @media (min-width: 667px) {
@@ -900,6 +1020,69 @@
 
   .clientes ul li:nth-of-type(3n) {
     margin-right: 0;
+  }
+
+  /* contato */
+  .contato-infos p {
+    font-size: 3.2rem;
+  }
+  .contato-infos span {
+    width: 500px;
+    font-size: 5.6rem;
+  }
+
+  .contato-form {
+    margin-bottom: 50px;
+  }
+
+  .contato-form form div {
+    float: left;
+    width: 48%;
+  }
+
+  .contato-form form div:last-child {
+    float: right;
+  }
+
+  /* footer */
+  .footer {
+    padding-bottom: 30px;
+  }
+
+  .footer-col {
+    margin: 0;
+    padding-top: 30px;
+    width: calc(100% / 3);
+    float: left;
+  }
+
+  .footer-col:first-child {
+    text-align: left;
+  }
+
+  .footer-col:nth-child(2) {
+    text-align: right;
+  }
+
+  .footer-col:last-child {
+    font-size: 1.2rem;
+    text-align: center;
+    position: relative;
+    top: 15px;
+    padding-top: 15px;
+    padding-left: 40px;
+  }
+
+  .footer-redes {
+    float: right;
+  }
+
+  .footer-redes a {
+    margin: 0;
+  }
+
+  .footer-redes a:not(:first-child) {
+    margin-left: 20px;
   }
 }
 
