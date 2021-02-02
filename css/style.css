@@ -643,6 +643,81 @@
   border-radius: 5px;
 }
 
+/******** BLOG ********/
+.blog {
+  background: #f5f5f5;
+  padding: 50px 0;
+}
+
+.blog .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.blog-item {
+  background: #333;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.blog-item:last-child {
+  margin-bottom: 0;
+}
+
+.blog-item-thumb {
+  position: relative;
+}
+
+.blog-item-thumb img {
+  display: block;
+}
+
+.blog-item-thumb span {
+  position: absolute;
+  right: 10px;
+  padding: 3px 10px;
+  font-size: 1.1rem;
+}
+
+.blog-item-thumb span:first-child {
+  color: #01c0b5;
+  background: rgba(255, 255, 255, 0.8);
+  bottom: 0;
+}
+
+.blog-item-thumb span:nth-child(2) {
+  color: #fff;
+  background: #01c0b5;
+  top: 100%;
+}
+
+.blog-item h2 {
+  font-size: 1.6rem;
+  margin: 10px 0 5px 0;
+  max-width: 88%;
+}
+
+.blog-item p {
+  font-size: 1.4rem;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.blog-link {
+  font-size: 1.4rem;
+  text-align: right;
+}
+
+.blog-link a {
+  color: #f47933;
+  font-weight: 700;
+}
+
+.blog-link a:hover {
+  text-decoration: underline;
+}
+
 /* ---------------------------
  -------- BREAKPOINTS --------
  ----------------------------- 
@@ -778,6 +853,16 @@
   .portfolio {
     width: 50%;
   }
+
+  /* blog */
+  .blog-item {
+    width: 48%;
+    margin-bottom: 0;
+  }
+
+  .blog-item:nth-of-type(1n + 3) {
+    margin-top: 4%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -892,6 +977,13 @@
 
   .clientes ul li:nth-of-type(6n) {
     margin-right: 0;
+  }
+
+  /* blog */
+  .blog-item:nth-of-type(1n + 3),
+  .blog-item {
+    width: calc((100% - 9%) / 4);
+    margin: 0;
   }
 }
 
