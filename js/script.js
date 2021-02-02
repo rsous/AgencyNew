@@ -7,6 +7,20 @@ $(document).ready(function () {
     $('.header-collapse').toggleClass('active');
   });
 
+  // Scroll
+  const nav = $('.header-nav'),
+    navHeight = nav.outerHeight();
+
+  $(window).on('scroll', function () {
+    const sTop = $(this).scrollTop();
+
+    if (sTop > navHeight) {
+      $('.header').addClass('fixed');
+    } else {
+      $('.header').removeClass('fixed');
+    }
+  });
+
   // Carousel Principal
   $('#carousel-principal').owlCarousel({
     items: 1,
