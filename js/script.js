@@ -60,6 +60,12 @@ $(document).ready(function () {
     }
   });
 
+  // Back top
+  $('.back-top').on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: 0 }, 700);
+  });
+
   // Carousel Principal
   $('#carousel-principal').owlCarousel({
     items: 1,
