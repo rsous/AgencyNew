@@ -215,6 +215,58 @@
 }
 
 /* ------ EQUIPE ------ */
+
+/* modal */
+.dialog-equipe-photo {
+  height: 226px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.dialog-equipe-photo img {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.dialog-equipe-redes {
+  text-align: center;
+  margin: 10px 0 20px 0;
+}
+
+.dialog-equipe-redes a {
+  color: #2c3e50;
+  font-size: 3.2rem;
+  margin: 0 10px;
+}
+
+.dialog-equipe-redes a:hover {
+  color: #f47933;
+}
+
+.dialog-equipe-habilidades span {
+  float: right;
+}
+
+.dialog-equipe-habilidades li {
+  margin-bottom: 10px;
+}
+
+.dialog-equipe-habilidades li div {
+  background: #eee;
+  height: 13px;
+  position: relative;
+}
+
+.dialog-equipe-habilidades li div span {
+  background: #01c0b5;
+  height: 100%;
+  position: absolute;
+  width: 1%;
+}
+
+/* conteúdo */
+
 .equipe {
   background: #f5f5f5;
   padding: 50px 0;
