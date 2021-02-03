@@ -1155,6 +1155,17 @@
 }
 
 @media (min-width: 960px) {
+  /* modal */
+  .dialog-portfolio .dialog-cols {
+    float: left;
+    width: 68%;
+  }
+
+  .dialog-portfolio .dialog-cols:last-child {
+    float: right;
+    width: 30%;
+  }
+
   /* header */
   @keyframes animaHeader {
     0% {

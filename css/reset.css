@@ -150,6 +150,7 @@ ul {
   left: 50%;
   top: 5px;
   transform: translateX(-50%);
+  outline: none;
 }
 
 .dialog-close i {
@@ -162,7 +163,7 @@ ul {
   display: none;
   overflow-y: auto;
   width: 90%;
-  max-width: 760px;
+  max-width: 870px;
   max-height: 100%;
   position: relative;
   left: 50%;
