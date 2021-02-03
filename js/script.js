@@ -1,4 +1,19 @@
 $(document).ready(function () {
+  // DIALOG
+  $('.dialog-close').click(function () {
+    $('.dialog-body').fadeOut('200', function () {
+      $('.dialog').fadeOut('200');
+    });
+  });
+
+  $('.dialog-open').click(function (e) {
+    e.preventDefault();
+    const target = $(this).attr('href');
+    $('.dialog').fadeIn('200', function () {
+      $(target).fadeIn('200');
+    });
+  });
+
   //MENU
   $('#nav-toggle').click(function (e) {
     e.preventDefault();

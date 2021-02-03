@@ -130,6 +130,7 @@ ul {
 
 /************ DIALOG *************/
 .dialog {
+  display: none;
   position: fixed;
   background: rgba(255, 255, 255, 0.95);
   width: 100%;
@@ -158,6 +159,7 @@ ul {
 }
 
 .dialog-body {
+  display: none;
   overflow-y: auto;
   width: 90%;
   max-width: 760px;
@@ -176,7 +178,7 @@ ul {
   text-align: center;
   padding: 20px 0 10px 0;
   margin-bottom: 20px;
-  border-bottom: 2px solid #01c0b5;
+  border-bottom: 1px solid #01c0b5;
   line-height: 1.2;
 }
 
@@ -201,7 +203,7 @@ ul {
 }
 
 .dialog-cols-header {
-  margin: 10px 0;
+  margin-bottom: 10px;
   padding-bottom: 5px;
   border-bottom: 1px solid #01c0b5;
 }
