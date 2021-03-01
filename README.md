@@ -25,7 +25,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/rsous/AgencyNew">
-    <img src="images/agency_new_logo-min.png" alt="Logo" width="100%" height="100%">
+    <img src="images/agency_new_logo-min.png" alt="Logo" width="50%" height="50%">
   </a>
 
   <h3 align="center">Agency New</h3>
