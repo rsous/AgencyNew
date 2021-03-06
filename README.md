@@ -108,7 +108,7 @@ See the [open issues](https://github.com/rsous/AgencyNew/issues) for a list of p
 
 ## Contact
 
-Rodolfo - [@rsous3](https://twitter.com/rsous3) - rsous@pm.me
+Rodolfo - [@rsovs](https://twitter.com/rsovs) - rsous@pm.me
 
 Project Link: [https://github.com/rsous/AgencyNew](https://github.com/rsous/AgencyNew)
 
